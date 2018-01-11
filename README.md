@@ -2,7 +2,7 @@
 
 Plot filled Julia sets.
 
-###Examples:
+### Examples:
 
 `python julia.py 0+1J`
 ![Example image](example2.png?raw=true)
