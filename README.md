@@ -13,7 +13,7 @@ Where Z is a complex number in the form x+yJ. For example,
 If the real part x is negative, quote the argument with a leading space so it isn't interpreted as an option, or precede the argument with '--'. For example,
 
     python julia.py ' -0.5+.75J'
-    python julaa.py -- -0.5+.75J
+    python julia.py -- -0.5+.75J
     
 
 ### Examples:
