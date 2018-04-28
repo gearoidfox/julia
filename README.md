@@ -4,6 +4,7 @@ Plot filled [Julia sets](https://en.wikipedia.org/wiki/Julia_set).
 
 ### Usage:
 
+    python julia.py --help
     python julia.py Z
 
 Where Z is a complex number in the form x+yJ. For example,
@@ -15,11 +16,13 @@ If the real part x is negative, quote the argument with a leading space so it is
     python julia.py ' -0.5+.75J'
     python julia.py -- -0.5+.75J
     
-
 ### Examples:
 
 `python julia.py 0+1J`
 ![Example image](example2.png?raw=true)
+
+`python julia.py ' -0.23+0.97J' -i 800 --offset 0.47 -r 2000 --colour`
+![Example image](example3.png?raw=true)
 
 `python julia.py ' -0.4+0.6J' -i 300 --offset 0.67 -r 2000 --colour  --smooth`
 ![Example image](example1.png?raw=true)
