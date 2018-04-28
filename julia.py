@@ -121,9 +121,12 @@ def main():
             # calculate current initial z value:
             x = x0 + (x1 - x0) * xpixel / x_res
             y = y0 + (y1 - y0) * ypixel / y_res
+            if y < 0:
+                continue
             z = x + 1j * y
-
-            pixels[ypixel, xpixel] = checkz(z, c, r, max_iter)
+            pix = checkz(z, c, r, max_iter)
+            pixels[ypixel, xpixel] = pix
+            pixels[-ypixel, -xpixel] = pix
     
 
     # color image
